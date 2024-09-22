@@ -16,14 +16,14 @@ function Navbar() {
       <div
         className={` w-full bg-[#2c3e50] fixed top-0 left-0 z-[1000] duration-500  `}
       >
-        <div className="md:flex items-center justify-between container  py-3   ">
+        <div className="md:flex items-center justify-between container px-2  py-3   ">
           <a to="start" className="font-bold text-3xl  text-white">
             Task
           </a>
 
           <div
             onClick={() => setOpen(!open)}
-            className=" absolute right-8 top-8 cursor-pointer md:hidden py-3  "
+            className=" absolute right-8 top-2 cursor-pointer md:hidden py-3  "
           >
             <Menu />
           </div>
