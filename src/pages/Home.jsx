@@ -9,7 +9,9 @@ function Home({ id }) {
   const { isPending, data } = useQuery({
     queryKey: ["items", id, `${after}`],
     queryFn: async () => {
-      const res = await axiosInastance.get(`/${id}.json?after=${after}`);
+      const res = await axiosInastance.get(
+        `/${id}.json?after=${after}&limit=10`
+      );
       return res.data;
     },
     enabled: !!id,
